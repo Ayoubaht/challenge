@@ -1,11 +1,15 @@
-// Online C compiler to run C program online
 #include <stdio.h>
- int main()
+ int main () 
 {
-float ms , kmh   ;
-printf("entre km/h:");
-scanf("%f",&kmh);
-ms = kmh * 0.277708;
-printf("le résultat en en métres par seconde(m) est %.2f",ms);
-return 0;
+float c ;
+printf("Entrez la température en Celsius:");
+
+scanf("%f",&c);
+if(c<0){
+    printf("solide");
+    } else if (0 <= c && c < 100) {
+    printf("Liquide");
+    } else  {
+    printf("Gaz");
+    }
 }
